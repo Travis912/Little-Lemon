@@ -1,0 +1,32 @@
+
+
+.reservations-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--off-white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reservations-form label{
+    margin-bottom: 5px;
+}
+
+.reservations-form input,
+.reservations-form select {
+    margin-bottom: 20px;
+}
+
+.reservations-form .submit-btn {
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0px auto;
+    border: none;
+    background-color: var(--yellow);
+    font-weight: 600;
+}
+
+.reservations-form .submit-btn:hover{
+    cursor: pointer;
+}
