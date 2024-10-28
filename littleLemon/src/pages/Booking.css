@@ -1,11 +1,25 @@
 
+.booking-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
 
 .reservations-form {
     display: flex;
     flex-direction: column;
     background-color: var(--off-white);
-    padding: 20px;
+    padding: 50px 70px 50px 70px;
     border-radius: 10px;
+    width: calc(var(--max-width) - 140px);
+    gap: 1%;
+}
+
+.reservations-form h2 {
+    margin: 0 auto;
 }
 
 .reservations-form label{
@@ -14,7 +28,7 @@
 
 .reservations-form input,
 .reservations-form select {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 
 .reservations-form .submit-btn {

@@ -20,9 +20,9 @@ export default function BookingForm(props) {
     }
 
     return (
-        <>
+        <div>
             <form className="reservations-form" onSubmit={handleSubmit}>
-                <h3>Book Now</h3>
+                <h2>Book Now</h2>
                 <label htmlFor="res-date">Choose Date:</label>
                 <input type="date" id="res-date" value={date} required onChange={(e) => {
                     handleChange(e.target.value)
@@ -54,7 +54,7 @@ export default function BookingForm(props) {
 
                 <input aria-label="On Click" className='submit-btn' type="submit" value="Make Your reservation" onClick={props.submitForm}></input>
             </form>
-        </>
+        </div>
     )
 }
 

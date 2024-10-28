@@ -3,6 +3,7 @@ import Special from "../components/specials"
 import Nav from "./Nav"
 import '../App.css'
 import { Link } from 'react-router-dom'
+import Footer from "../components/Footer"
 
 // images
 import bruchetta from '../icons_assets/bruchetta.svg'
@@ -62,9 +63,8 @@ export default function Home() {
 
       </div>
 
-      <footer>
-
-      </footer>
+      <Footer>
+      </Footer>
     </>
   )
 }

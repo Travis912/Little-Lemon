@@ -1,6 +1,8 @@
 import "./Booking.css";
+import "../App.css";
 import Nav from "./Nav";
 import BookingForm from "../components/BookingForm";
+import Footer from "../components/Footer";
 import { useReducer } from "react";
 import FetchAPI from "../bookingFunctions/fetchApi";
 import SubmitAPI from "../bookingFunctions/submitApi";
@@ -23,13 +25,14 @@ export default function BoookingPage() {
   }
 
   return (
-    <>
+    <div className="booking-page">
       <Nav></Nav>
       <BookingForm
         availableTimes={state}
         dispatch={dispatch}
         submitForm={submitForm}
       ></BookingForm>
-    </>
+      <Footer></Footer>
+    </div>
   );
 }
